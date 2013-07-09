@@ -1,4 +1,4 @@
-# Jersey City Business Database
+#Jersey City Business Database
 
 This is the first version for 
 [itsjerseycity.com's restaurant and local business directory.](http://itsjerseycity.com)
