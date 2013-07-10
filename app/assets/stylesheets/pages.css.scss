@@ -1,0 +1,224 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END RESET*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#content {
+	margin-top: 65px;
+	width: 90%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#navigation {
+	width: 90%;
+	background-color: rgba(255,255,255,.95);
+	height: 50px;
+	position: fixed;
+	top: 0;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	z-index: 1;
+	-webkit-box-shadow: 0 1px 1px -1px #505050;
+    -moz-box-shadow: 0 1px 1px -1px #505050;
+    box-shadow: 0 1px 1px -1px #505050;
+	img {
+		float: left;
+		padding-left: 1%; }
+}
+
+#logo { 
+	font-family: 'Oleo Script', cursive;
+	float: left;
+	font-size: 24px;
+	padding-top: 10px;
+	padding-left: 1%;
+	color: #383838;
+	a {
+		text-decoration: none;
+		color: #383838;}	
+}
+
+#nav {
+	ul {
+		padding: 0;}
+	li {
+		font-family: 'Open Sans', 'helvetica', sans-serif, bold;
+		float: right;
+		font-size: 14px;
+		list-style-type: none;
+		display: inline;
+		padding: 16px 2%;
+		text-transform: uppercase;
+		border-right: 1px solid #eee;}
+	li a {
+		text-decoration: none;
+		color: #383838;}
+	li a:hover {
+		color: #fff !important; 
+		background-color: #45763E;
+		padding: 16px 20px;}
+}
+
+
+
+#subnav {
+	height: 50px;
+	background-color: #71AD69;
+	font-family: 'helvetica', 'verdana', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#subnav ul {
+	padding-top: 18px;
+	padding-left: 3%;
+}
+
+#subnav li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 3%;
+	font-style: bold;
+	font: #fff;
+}
+
+#subnav li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#section {
+	position: relative;
+	background-color: #e8e8e8;
+	width: 100%;
+	height: 400px;
+}
+
+.section1 {
+background: url(../images/itsjerseycity_blog_bkgd.png);
+}
+
+.section2 {
+	background: url(../images/jersey-city_1.png);
+}
+
+#section h2 {
+	font-family: 'Oleo Script', cursive;
+	color: #383838;
+	font-size: 54px;
+	padding-left: 3%;
+	padding-top: 3%;
+}
+
+.inner {
+	position: absolute;
+	right: 20px;
+	bottom: 150px;
+	max-width: 300px;
+}
+
+.inner p{
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.2;
+	color: #343434;
+}
+
+a.button {
+	background-color: #71AD69;
+	margin-top: 20px;
+	padding: 15px 30px;
+	display: inline-block;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 24px;
+	text-decoration: none;
+	color: #e8e8e8;
+}
+
+a:hover.button {
+	background-color: #45763E;
+}
+
+
+
+#footer {
+	position: relative;
+	height: 150px;
+	background-color: #71AD69;
+}
+
+.footerlist {
+	width: 100px;
+	position: absolute;
+	margin: 40px 45%;
+}
+
+#footer li {
+	text-align: center;
+	line-height: 1.5;
+}
+#footer li a {
+	text-decoration: none;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	color: #fff;
+}
+
+#footer li a:hover {
+	color: #45763E;
+}
