@@ -5,6 +5,14 @@
 			<li><a href="mailto:itsjerseycity@gmail.com.com?Subject=Hey%JC" target="_top">contact us</a></li>
 			<li><a href="https://www.facebook.com/pages/Itsjerseycity/534065139939967?ref=hl" alt="Jersey City Facebook">facebook</a></li>
 			<li><a href="http://twitter.com/jerseycity" alt="Jersey City Twitter">twitter</a></li>
+			<!-- 
+			<li><%= link_to "admin", new_user_registration_path %></li> -->
+			<% if user_signed_in? %>
+				<li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
+				<li><%= link_to "edit", edit_user_registration_path %></li>
+			<% else %>
+				<li><%= link_to "admin", new_user_session_path %></li>
+			<% end %>
 		</ul>
 	</div>
 </div>

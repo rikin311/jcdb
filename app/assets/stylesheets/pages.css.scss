@@ -116,7 +116,7 @@ body {
 #subnav {
 	height: 50px;
 	background-color: #71AD69;
-	font-family: 'helvetica', 'verdana', sans-serif;
+	font-family: 'Open Sans', 'helvetica', 'verdana', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	color: #fff;
@@ -127,6 +127,7 @@ body {
 		display: inline;
 		list-style-type: none;
 		padding-right: 3%;
+		font-family: 'Open Sans', 'helvetica', sans-serif;
 		font-style: bold;
 		font: #fff;}
 	li a {
@@ -148,7 +149,7 @@ body {
 }
 
 .section1 {
-	background: url(../app/assets/images/itsjerseycity_blog_bkgd.png);
+	background: url(../images/itsjerseycity_blog_bkgd.png);
 	}
 
 .section2 {
@@ -204,5 +205,12 @@ a:hover.button {
 .footerlist {
 	width: 100px;
 	position: absolute;
-	margin: 40px 45%;
+	margin: 20px 45%;
+}
+
+.fadeIn {
+	opacity: 1;
+}
+.fadeIn:hover {
+	opacity: 0;
 }
