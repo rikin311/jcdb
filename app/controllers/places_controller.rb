@@ -1,4 +1,6 @@
 class PlacesController < ApplicationController
+  before_filter :authenticate_user!, except: [:index]
+
   # GET /places
   # GET /places.json
   def index
@@ -24,7 +26,7 @@ class PlacesController < ApplicationController
   # GET /places/new
   # GET /places/new.json
   def new
-    @place = Place.new
+    @place = current_user.places.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,13 +36,13 @@ class PlacesController < ApplicationController
 
   # GET /places/1/edit
   def edit
-    @place = Place.find(params[:id])
+    @place = current_user.places.find(params[:id])
   end
 
   # POST /places
   # POST /places.json
   def create
-    @place = Place.new(params[:place])
+    @place = current_user.places.new(params[:place])
 
     respond_to do |format|
       if @place.save
@@ -56,7 +58,7 @@ class PlacesController < ApplicationController
   # PUT /places/1
   # PUT /places/1.json
   def update
-    @place = Place.find(params[:id])
+    @place = current_user.places.find(params[:id])
 
     respond_to do |format|
       if @place.update_attributes(params[:place])
@@ -72,7 +74,7 @@ class PlacesController < ApplicationController
   # DELETE /places/1
   # DELETE /places/1.json
   def destroy
-    @place = Place.find(params[:id])
+    @place = current_user.places.find(params[:id])
     @place.destroy
 
     respond_to do |format|

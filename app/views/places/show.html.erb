@@ -1,10 +1,16 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <b>Name:</b>
   <%= @place.name %>
 </p>
 
+<p>
+  <b>Phone:</b>
+  <%= @place.phone %>
+</p>
 
+<% if current_user == @place.user %>
 <%= link_to 'Edit', edit_place_path(@place) %> |
+<% end %>
+
 <%= link_to 'Back', places_path %>
+
