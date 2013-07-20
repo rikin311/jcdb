@@ -1,4 +1,7 @@
 Jcdb::Application.routes.draw do
+  resources :places
+
+
   devise_for :users
 
   get 'about' => 'pages#about'
