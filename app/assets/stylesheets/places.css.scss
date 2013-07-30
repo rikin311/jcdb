@@ -1,3 +1,15 @@
 // Place all the styles related to the Places controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.list td {
+	width: 30%;
+} 
+
+label {
+display: block;
+}
+
+tr {
+	width: 400px;
+}

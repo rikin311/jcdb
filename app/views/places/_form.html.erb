@@ -1,8 +1,17 @@
 <%= simple_form_for(@place) do |f| %>
   <%= f.error_notification %>
 
-    <%= f.input :name %>
-    <%= f.input :phone %>
+    <%= f.input :name, as: :string, input_html: { rows: "1" } %>
+    <%= f.input :description, as: :text, input_html: { rows: "3" } %>
+    <%= f.input :phone, as: :tel %>
+
+     <%= f.input :address1, as: :string, input_html: { rows: "1" } %>
+     <%= f.input :address2, as: :string, input_html: { rows: "1" }  %>
+     <%= f.input :city, as: :string, input_html: { rows: "1" }  %>
+	   <%= f.input :state, as: :string, input_html: { rows: "1" }  %> 
+     <%= f.input :zip, :input_html => { :maxlength => 5 } %>
+
+    <%= f.input :url %>
 
   <div class="form-actions">
     <%= f.button :submit %>
