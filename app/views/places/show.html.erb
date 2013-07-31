@@ -1,3 +1,5 @@
+<% @title= " #{ @place.name } - Jersey City | itsjerseycity" %>
+
 <div id="main">
 
 <p>
@@ -7,8 +9,43 @@
 
 <p>
   <b>Phone:</b>
-  <%= @place.phone %>
+  <%= number_to_phone(@place.phone, area_code:true) %>
 </p>
+
+<p>
+  <b>Website:</b>
+  <%= link_to @place.url %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @place.description %>
+</p>
+
+
+<p>
+  <b>Address:</b>
+  <%= @place.address1 %>
+  <%= @place.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @place.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @place.state %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @place.zip %>
+</p>
+
+
+
 
 <% if current_user == @place.user %>
 <%= link_to 'Edit', edit_place_path(@place) %> |

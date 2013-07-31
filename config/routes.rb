@@ -5,8 +5,6 @@ Jcdb::Application.routes.draw do
   devise_for :users
 
   get 'about' => 'pages#about'
-
-  get 'explore' => 'pages#explore'
   
   root :to => 'pages#home'
 

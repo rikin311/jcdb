@@ -6,7 +6,6 @@ class Place < ActiveRecord::Base
   validates :description, :presence => true
 
   validates :state, length: { maximum: 2 }
-  validates_format_of :zip, :with => /^\d{5}(-\d{4})?$/
 
 
   belongs_to :user

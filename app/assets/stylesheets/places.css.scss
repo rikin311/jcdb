@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+	vertical-align: middle;
+}
+
 .list td {
 	width: 30%;
 } 
@@ -10,6 +15,27 @@ label {
 display: block;
 }
 
+thead {
+	height: 30px;
+	font-weight: bold;
+	text-align: left;
+}
+
 tr {
+	height: 40px;
 	width: 400px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#main {
+	min-height: 600px;
+	padding-left: 3%;
+}
+
+.alert alert-notice {
+	padding-left: 3%;
 }

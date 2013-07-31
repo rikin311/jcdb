@@ -49,15 +49,12 @@ table {
 
 /*END RESET*/
 
-body {
-	margin: 0px;
-	padding: 0px;
+a:hover {
+	background-color: transparent !important;
 }
 
 #content {
-	margin-top: 65px;
-	margin-left: auto;
-	margin-right:auto;
+	margin: 65px 0 -150px;
 }
 
 #navigation {
@@ -84,9 +81,11 @@ body {
 	padding-top: 10px;
 	padding-left: 3%;
 	color: #383838;
-	a {
-		text-decoration: none;
-		color: #383838;}	
+}
+
+#logo a {
+	text-decoration: none;
+	color: #383838;
 }
 
 #nav {
@@ -101,13 +100,17 @@ body {
 		padding: 16px 2%;
 		text-transform: uppercase;
 		border-right: 1px solid #eee;}
+	li:hover {
+		background-color: #45763E;
+		transition: background .5s ease-in-out;
+   		-moz-transition: background .5s ease-in-out;
+   		-webkit-transition: background .5s ease-in-out;
+		opacity: .75;}
+	li:hover a {
+		color: #fff !important ;}
 	li a {
 		text-decoration: none;
 		color: #383838;}
-	li a:hover {
-		color: #fff !important; 
-		background-color: #45763E;
-		padding: 16px 20px;}
 }
 
 
@@ -132,6 +135,12 @@ body {
 	li a {
 	text-decoration: none;
 	color: #fff;}
+	li a:hover {
+		color: #45763E;
+		transition: color .25s ease-in-out;
+   		-moz-transition: color .25s ease-in-out;
+   		-webkit-transition: color .25s ease-in-out;
+	}
 }
 
 #section {
@@ -165,29 +174,29 @@ body {
 		font-weight: 700;
 		font-size: 30px;
 		line-height: 1.2;
-		color: #343434;}
-}
+		color: #343434;}}
+	a.button {
+		background-color: #71AD69;
+		margin-top: 20px;
+		padding: 15px 30px;
+		display: inline-block;
+		font-family: 'Open Sans';
+		font-weight: 700;
+		font-size: 24px;
+		text-decoration: none;
+		color: #e8e8e8;}
+	a.button:hover {
+		background-color: #45763E;
+		transition: background .5s ease-in-out;
+	   	-moz-transition: background .5s ease-in-out;
+	   	-webkit-transition: background .5s ease-in-out;
+		opacity: 1;}
 
-a.button {
-	background-color: #71AD69;
-	margin-top: 20px;
-	padding: 15px 30px;
-	display: inline-block;
-	font-family: 'Open Sans';
-	font-weight: 700;
-	font-size: 24px;
-	text-decoration: none;
-	color: #e8e8e8;
-}
-
-a:hover.button {
-	background-color: #45763E;
-}
 
 #footer {
-	position: relative;
 	height: 150px;
 	background-color: #71AD69;
+	width: 100%;
 	li {
 		text-align: center;
 		line-height: 1.5;}
@@ -214,6 +223,3 @@ a:hover.button {
 	opacity: 0;
 }
 
-#main {
-	padding-left: 3%;
-}
